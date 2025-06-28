@@ -1,0 +1,17 @@
+version: "3"
+services:
+  mysql-db:
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_USER: roberto
+      MYSQL_PASSWORD: roberto-pass
+      MYSQL_DATABASE: roberto-db
+    volumes:
+      - /home/theking/Documents/myprojects/Stack-lamp-docker-compose-file/backup:/var/lib/mysql
+
+  
+  php:
+    image: php
+    container_name: myphp
+    restart: always
