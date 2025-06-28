@@ -7,6 +7,7 @@ services:
       MYSQL_USER: roberto
       MYSQL_PASSWORD: roberto-pass
       MYSQL_DATABASE: roberto-db
+      MYSQL_RANDOM_ROOT_PASSWORD: '1'
     volumes:
       - /home/theking/Documents/myprojects/Stack-lamp-docker-compose-file/backup:/var/lib/mysql
 
